@@ -1,0 +1,202 @@
+
+// const products = [
+//   {
+//     name: "iPhone 13 Pro Max",
+//     images: {
+//       public_id: "iphone_13_pro_max",
+//       url: "https://example.com/iphone_13_pro_max.jpg",
+//     },
+//     price: 1099,
+//     rating: 4.8,
+//     description:
+//       "The iPhone 13 Pro Max is the latest and greatest smartphone from Apple.",
+//     stock: 100,
+//     numOfReviews: 50,
+//     reviews: [
+//       {
+//         name: "John Doe",
+//         rating: 4.5,
+//         comment: "Great phone, love the camera!",
+//       },
+//       {
+//         name: "Jane Smith",
+//         rating: 4.2,
+//         comment: "Battery life could be better, but overall a great phone.",
+//       },
+//     ],
+//   },
+
+//   {
+//     name: "Samsung Galaxy S21",
+//     images: {
+//       public_id: "samsung_galaxy_s21",
+//       url: "https://example.com/samsung_galaxy_s21.jpg",
+//     },
+//     price: 799,
+//     rating: 4.6,
+//     description:
+//       "The Samsung Galaxy S21 is a flagship Android smartphone with top-of-the-line features.",
+//     stock: 50,
+//     numOfReviews: 20,
+//     reviews: [
+//       {
+//         name: "Bob Johnson",
+//         rating: 4.0,
+//         comment: "Nice phone, but not as good as the iPhone.",
+//       },
+//       {
+//         name: "Alice Brown",
+//         rating: 4.8,
+//         comment: "Love this phone! Fast and reliable.",
+//       },
+//     ],
+//   },
+//   {
+//     name: "iPhone 13 Pro Max",
+//     images: {
+//       public_id: "iphone-13-pro-max",
+//       url: "https://www.example.com/iphone-13-pro-max.jpg",
+//     },
+//     price: 1099,
+//     rating: 4.8,
+//     description:
+//       "The iPhone 13 Pro Max is the latest and greatest smartphone from Apple, featuring a large OLED display, A15 Bionic chip, and 5G connectivity.",
+//     stock: 50,
+//     numOfReviews: 10,
+//     reviews: [
+//       {
+//         name: "John Doe",
+//         rating: 4.5,
+//         comment: "Great phone, but the battery life could be better.",
+//       },
+//       {
+//         name: "Jane Smith",
+//         rating: 5,
+//         comment: "Love this phone, the camera is amazing!",
+//       },
+//     ],
+//   },
+//   {
+//     name: "Samsung Galaxy S21 Ultra",
+//     images: {
+//       public_id: "samsung-galaxy-s21-ultra",
+//       url: "https://www.example.com/samsung-galaxy-s21-ultra.jpg",
+//     },
+//     price: 1199,
+//     rating: 4.7,
+//     description:
+//       "The Samsung Galaxy S21 Ultra is a powerful Android smartphone with a large AMOLED display, Exynos 2100 processor, and 5G connectivity.",
+//     stock: 40,
+//     numOfReviews: 8,
+//     reviews: [
+//       {
+//         name: "Bob Johnson",
+//         rating: 4,
+//         comment: "Great phone, but the fingerprint sensor can be finicky.",
+//       },
+//       {
+//         name: "Alice Williams",
+//         rating: 5,
+//         comment: "The camera on this phone is incredible!",
+//       },
+//     ],
+//   },
+//   {
+//     name: "Sony Alpha A7 III",
+//     images: {
+//       public_id: "sony-alpha-a7-iii",
+//       url: "https://www.example.com/sony-alpha-a7-iii.jpg",
+//     },
+//     price: 1999,
+//     rating: 4.9,
+//     description:
+//       "The Sony Alpha A7 III is a high-end mirrorless camera with a full-frame sensor, 4K video recording, and 5-axis image stabilization.",
+//     stock: 10,
+//     numOfReviews: 5,
+//     reviews: [
+//       {
+//         name: "Sarah Lee",
+//         rating: 5,
+//         comment: "This camera is a game-changer for my photography!",
+//       },
+//       {
+//         name: "David Chen",
+//         rating: 4.5,
+//         comment: "Great camera, but it can be a bit heavy to carry around.",
+//       },
+//     ],
+//   },
+//   {
+//     name: "Samsung Galaxy S21 Ultra 5G",
+//     images: {
+//       public_id: "samsung-galaxy-s21-ultra-5g",
+//       url: "https://www.example.com/samsung-galaxy-s21-ultra-5g.jpg",
+//     },
+//     price: 1199,
+//     rating: 4.8,
+//     description:
+//       "The Samsung Galaxy S21 Ultra 5G is a premium smartphone with a 6.8-inch AMOLED display, 108MP camera, and 5G connectivity.",
+//     stock: 15,
+//     numOfReviews: 8,
+//     reviews: [
+//       {
+//         name: "John Smith",
+//         rating: 5,
+//         comment:
+//           "This phone is amazing! The camera takes incredible photos and the 5G is super fast.",
+//       },
+//       {
+//         name: "Alice Johnson",
+//         rating: 4.5,
+//         comment:
+//           "I love the large display and the battery life is great. My only complaint is that it's a bit heavy.",
+//       },
+//       {
+//         name: "Bob Wilson",
+//         rating: 4,
+//         comment:
+//           "Overall a great phone, but the fingerprint sensor can be a bit finicky at times.",
+//       },
+//       {
+//         name: "Karen Lee",
+//         rating: 5,
+//         comment:
+//           "This is the best phone I've ever owned. The screen is gorgeous and the camera is top-notch.",
+//       },
+//       {
+//         name: "David Chen",
+//         rating: 4.5,
+//         comment:
+//           "The performance is amazing and the design is sleek. However, it's a bit expensive.",
+//       },
+//       {
+//         name: "Sarah Kim",
+//         rating: 4,
+//         comment:
+//           "I love the phone, but the fingerprint sensor is not always reliable.",
+//       },
+//       {
+//         name: "Tom Brown",
+//         rating: 5,
+//         comment:
+//           "This is an excellent phone with great features and performance. Highly recommend.",
+//       },
+//       {
+//         name: "Jessica Davis",
+//         rating: 4.5,
+//         comment:
+//           "The camera is phenomenal and the display is beautiful. My only complaint is that it's a bit too large for my liking.",
+//       },
+//     ],
+//   },
+
+//   // Add more products here...
+// ];
+
+// Product.insertMany(products)
+//   .then(() => {
+//     console.log("Products created successfully!");
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
