@@ -31,7 +31,7 @@ bash
 
 npm install
 
-Create a .env file in the root directory of the project and replace the placeholder values with your own configuration:
+Create a .env file in the config folder of the project and replace the placeholder values with your own configuration:
 
 plaintext
 
