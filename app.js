@@ -33,9 +33,9 @@ app.use("/api/v1", ProductRouter);
 app.use("/api/v1", userRoutes);
 app.use("/api/v1", OrderRouter);
 app.use("/api/v1", PaymentRouter);
-app.use(express.static(path.join(__dirname, "../client/dist")));
+app.use(express.static(path.join(__dirname, "../client")));
 app.get('*',(req,res)=>{
-    res.sendFile(path.resolve(__dirname, "../client/dist/index.html"));
+    res.sendFile(path.resolve(__dirname, "../client/index.html"));
 })
 
 
