@@ -29,10 +29,10 @@ app.use(cors());
 app.use(cookieParser());
 app.use(fileUpload());
 
-app.use("/api/v1", ProductRouter);
-app.use("/api/v1", userRoutes);
-app.use("/api/v1", OrderRouter);
-app.use("/api/v1", PaymentRouter);
+app.use("/https://shop-kart-buy-ecommerce-products.onrender.com", ProductRouter);
+app.use("/https://shop-kart-buy-ecommerce-products.onrender.com", userRoutes);
+app.use("/https://shop-kart-buy-ecommerce-products.onrender.com", OrderRouter);
+app.use("/https://shop-kart-buy-ecommerce-products.onrender.com", PaymentRouter);
 app.use(express.static(path.join(__dirname, "./client")));
 app.get('*',(req,res)=>{
     res.sendFile(path.resolve(__dirname, "./client/index.html"));
